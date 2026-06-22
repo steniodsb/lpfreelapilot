@@ -33,7 +33,7 @@ export function NavBar({
         className,
       )}
     >
-      <div className="flex items-center gap-1 rounded-full border border-stroke bg-white/70 px-1 py-1 shadow-card backdrop-blur-lg">
+      <div className="glass-card flex items-center gap-0.5 rounded-full px-1.5 py-1.5 shadow-card">
         {items.map((item) => {
           const Icon = item.icon;
           const isActive = activeTab === item.name;
@@ -44,15 +44,13 @@ export function NavBar({
               href={item.url}
               onClick={() => setActiveTab(item.name)}
               className={cn(
-                "relative cursor-pointer rounded-full px-5 py-2 text-sm font-medium transition-colors",
-                "text-body hover:text-brand-600",
+                "relative inline-flex cursor-pointer items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium transition-colors",
+                "text-body hover:bg-brand-50/70 hover:text-brand-700",
                 isActive && "text-brand-700",
               )}
             >
-              <span className="hidden md:inline">{item.name}</span>
-              <span className="md:hidden">
-                <Icon size={18} strokeWidth={2.2} />
-              </span>
+              <Icon size={17} strokeWidth={2.2} className="xl:hidden" />
+              <span className="hidden xl:inline">{item.name}</span>
               {isActive && (
                 <motion.div
                   layoutId="lamp"

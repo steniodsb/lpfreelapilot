@@ -10,7 +10,6 @@ import {
   Layers,
   Clock,
   BadgeCheck,
-  LayoutGrid,
   Boxes,
   Tag,
   MessageSquareQuote,
@@ -21,6 +20,9 @@ import {
   Search,
   Bot,
   LayoutDashboard,
+  Home,
+  Sparkles,
+  MonitorPlay,
 } from "lucide-react";
 
 export const siteConfig = {
@@ -34,10 +36,12 @@ export const siteConfig = {
 };
 
 export const nav = [
-  { name: "Recursos", url: "#solucao", icon: LayoutGrid },
+  { name: "Início", url: "#", icon: Home },
+  { name: "Recursos", url: "#solucao", icon: Sparkles },
   { name: "Funcionalidades", url: "#funcionalidades", icon: Boxes },
-  { name: "Preços", url: "#precos", icon: Tag },
+  { name: "Demonstração", url: "#demo", icon: MonitorPlay },
   { name: "Depoimentos", url: "#depoimentos", icon: MessageSquareQuote },
+  { name: "Preços", url: "#precos", icon: Tag },
 ];
 
 export const heroRotating = [
