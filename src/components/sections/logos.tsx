@@ -7,7 +7,7 @@ export function Logos() {
   return (
     <section className="glass-strip relative py-8">
       <div className="relative [mask-image:linear-gradient(to_right,transparent,#000_6%,#000_94%,transparent)]">
-        <Marquee pauseOnHover className="[--gap:1.5rem]">
+        <Marquee pauseOnHover className="[--gap:3.5rem]">
           {marqueeFeatures.map((f) => (
             <div
               key={f.label}
