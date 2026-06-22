@@ -31,7 +31,7 @@ export function Pain() {
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {pain.items.map((item, i) => (
             <BlurFade key={item.title} delay={0.08 * i}>
-              <div className="h-full rounded-2xl border border-stroke bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1">
+              <div className="h-full rounded-2xl glass-card p-6 shadow-card transition-all duration-300 hover:-translate-y-1">
                 <span className="grid h-12 w-12 place-items-center rounded-xl bg-brand-50 text-brand-500">
                   <item.icon size={22} />
                 </span>

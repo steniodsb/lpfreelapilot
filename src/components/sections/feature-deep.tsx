@@ -16,7 +16,7 @@ export function FeatureDeep() {
             {/* texto */}
             <div className={cn(d.reverse && "lg:order-2")}>
               <BlurFade>
-                <span className="inline-flex items-center gap-2 rounded-full border border-stroke bg-white px-3 py-1 text-xs font-medium text-brand-600 shadow-card">
+                <span className="inline-flex items-center gap-2 rounded-full glass-card px-3 py-1 text-xs font-medium text-brand-600 shadow-card">
                   <d.icon size={14} />
                   {d.eyebrow}
                 </span>
@@ -49,7 +49,7 @@ export function FeatureDeep() {
 
             {/* imagem grande */}
             <BlurFade delay={0.15} yOffset={40} className={cn(d.reverse && "lg:order-1")}>
-              <div className="relative rounded-2xl border border-stroke bg-white p-2 shadow-float">
+              <div className="relative rounded-2xl glass-card p-2 shadow-float">
                 <div
                   className={cn(
                     "pointer-events-none absolute -inset-x-8 -bottom-8 h-32 rounded-full blur-3xl",

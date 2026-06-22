@@ -44,7 +44,7 @@ export function CardSwap({
         return (
           <motion.div
             key={idx}
-            className="absolute bottom-0 left-0 overflow-hidden rounded-2xl border border-stroke bg-white p-1.5 shadow-float"
+            className="absolute bottom-0 left-0 overflow-hidden rounded-2xl glass-card p-1.5 shadow-float"
             style={{
               width: w,
               height: h,

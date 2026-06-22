@@ -12,8 +12,8 @@ Tema claro, marca violeta, tipografia **DM Sans**, recheada de movimento.
 
 ## Rodando localmente
 ```bash
-pnpm install
-pnpm dev
+npm install
+npm run dev
 # http://localhost:3000
 ```
 

@@ -31,7 +31,7 @@ export function Demo() {
         </BlurFade>
 
         <BlurFade delay={0.25} yOffset={40}>
-          <div className="group relative mt-12 overflow-hidden rounded-2xl border border-stroke bg-white p-2 shadow-float">
+          <div className="group relative mt-12 overflow-hidden rounded-2xl glass-card p-2 shadow-float">
             <div className="pointer-events-none absolute -inset-x-10 -bottom-10 h-40 rounded-full bg-brand-500/20 blur-3xl" />
             <AppImage
               src={demo.img}

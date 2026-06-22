@@ -36,7 +36,7 @@ function HeroCopy() {
   return (
     <div className="px-6">
       <BlurFade delay={0.05}>
-        <span className="inline-flex items-center gap-2 rounded-full border border-stroke bg-white/70 px-4 py-1.5 text-xs font-medium text-body backdrop-blur">
+        <span className="inline-flex items-center gap-2 rounded-full glass-card px-4 py-1.5 text-xs font-medium text-body backdrop-blur">
           <Sparkles size={13} className="text-brand-500" />
           O hub do designer freelancer
         </span>
@@ -80,7 +80,7 @@ function HeroCopy() {
       </BlurFade>
 
       <BlurFade delay={0.55}>
-        <div className="mx-auto mt-8 inline-flex items-center gap-4 rounded-full border border-stroke bg-white/70 px-5 py-2.5 backdrop-blur">
+        <div className="mx-auto mt-8 inline-flex items-center gap-4 rounded-full glass-card px-5 py-2.5 backdrop-blur">
           <div className="flex -space-x-2">
             {heroAvatars.map((a) => (
               <Avatar key={a.name} className="h-8 w-8 border-2 border-white">

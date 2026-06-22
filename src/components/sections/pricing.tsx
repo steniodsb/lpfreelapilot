@@ -39,7 +39,7 @@ export function Pricing() {
           </BlurFade>
 
           <BlurFade delay={0.2}>
-            <div className="mt-7 inline-flex items-center gap-1 rounded-full border border-stroke bg-white p-1 shadow-card">
+            <div className="mt-7 inline-flex items-center gap-1 rounded-full glass-card p-1 shadow-card">
               <button
                 onClick={() => setYearly(false)}
                 className={cn(
@@ -92,7 +92,7 @@ export function Pricing() {
                   "relative flex h-full flex-col rounded-3xl p-8 transition-transform duration-300 hover:-translate-y-1",
                   plan.highlight
                     ? "bg-gradient-primary text-white shadow-cta lg:scale-[1.04]"
-                    : "border border-stroke bg-white text-ink shadow-card",
+                    : "glass-card text-ink shadow-card",
                 )}
               >
                 {plan.highlight && (

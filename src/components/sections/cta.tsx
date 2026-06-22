@@ -9,7 +9,7 @@ export function Cta() {
   return (
     <section className="px-6 pb-20 sm:pb-28">
       <BlurFade>
-        <div className="bg-aurora relative mx-auto max-w-4xl overflow-hidden rounded-[1.75rem] border border-stroke bg-white px-8 py-14 text-center shadow-card sm:px-16">
+        <div className="bg-aurora relative mx-auto max-w-4xl overflow-hidden rounded-[1.75rem] glass-card px-8 py-14 text-center shadow-card sm:px-16">
           <div className="bg-grid pointer-events-none absolute inset-0 [mask-image:radial-gradient(60%_60%_at_50%_0%,#000,transparent)]" />
           <div className="relative">
             <RevealText

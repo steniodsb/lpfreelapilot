@@ -77,7 +77,7 @@ const Card = ({
       boxShadow:
         "0 0 #0000, 0 9px 20px rgba(108,70,200,0.12), 0 37px 37px rgba(108,70,200,0.10), 0 84px 50px rgba(108,70,200,0.06), 0 149px 60px rgba(108,70,200,0.02)",
     }}
-    className="mx-auto mt-10 h-[30rem] w-full max-w-5xl rounded-[30px] border border-stroke bg-white p-2 shadow-2xl md:mt-16 md:h-[40rem] md:p-4"
+    className="mx-auto mt-10 h-[30rem] w-full max-w-5xl rounded-[30px] glass-card p-2 shadow-2xl md:mt-16 md:h-[40rem] md:p-4"
   >
     <div className="h-full w-full overflow-hidden rounded-2xl border border-stroke bg-bg-soft md:rounded-2xl">
       {children}

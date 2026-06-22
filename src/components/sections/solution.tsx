@@ -33,7 +33,7 @@ export function Solution() {
         <div className="mt-14 grid gap-5 sm:grid-cols-3">
           {solution.pillars.map((p, i) => (
             <BlurFade key={p.title} delay={0.1 * i}>
-              <BorderGlow className="h-full rounded-2xl border border-stroke bg-white p-7 text-left shadow-card transition-transform duration-300 hover:-translate-y-1">
+              <BorderGlow className="h-full rounded-2xl glass-card p-7 text-left shadow-card transition-transform duration-300 hover:-translate-y-1">
                 <GlassIcon icon={p.icon} />
                 <h3 className="mt-5 font-display text-lg font-normal text-ink">
                   {p.title}

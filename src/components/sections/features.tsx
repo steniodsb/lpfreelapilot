@@ -36,7 +36,7 @@ export function Features() {
         <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((f, i) => (
             <BlurFade key={f.key} delay={0.06 * i} className={f.span}>
-              <div className="group h-full overflow-hidden rounded-3xl border border-stroke bg-white p-4 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-brand-200">
+              <div className="group h-full overflow-hidden rounded-3xl glass-card p-4 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-brand-200">
                 <AppImage
                   src={f.img}
                   alt={f.title}
