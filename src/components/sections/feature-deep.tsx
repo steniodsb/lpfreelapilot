@@ -53,7 +53,7 @@ export function FeatureDeep() {
                 <div
                   className={cn(
                     "pointer-events-none absolute -inset-x-8 -bottom-8 h-32 rounded-full blur-3xl",
-                    d.reverse ? "bg-[#a445d8]/15" : "bg-brand-500/20",
+                    d.reverse ? "bg-brand-400/20" : "bg-brand-500/20",
                   )}
                 />
                 <AppImage

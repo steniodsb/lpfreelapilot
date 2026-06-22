@@ -115,7 +115,7 @@ export function Hero() {
       <div className="bg-rings pointer-events-none absolute inset-x-0 top-0 h-[620px]" />
       <div className="bg-grid pointer-events-none absolute inset-x-0 top-0 h-[900px] [mask-image:radial-gradient(70%_45%_at_50%_0%,#000,transparent)]" />
 
-      <div className="relative pt-24 md:pt-20">
+      <div className="relative pt-36 md:pt-32">
         <ContainerScroll titleComponent={<HeroCopy />}>
           <AppImage
             src="/app/dashboard.png"

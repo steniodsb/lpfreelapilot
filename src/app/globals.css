@@ -6,15 +6,15 @@
    =========================================================================== */
 @theme {
   /* Brand */
-  --color-brand-50: #f2eefe;
-  --color-brand-100: #e4dcfb;
-  --color-brand-200: #d4c5f9;
-  --color-brand-300: #c4b5fd;
-  --color-brand-400: #a78bfa;
-  --color-brand-500: #8060e0;
-  --color-brand-600: #6d28d9;
-  --color-brand-700: #581088;
-  --color-magenta: #a445d8;
+  --color-brand-50: #f5eff9;
+  --color-brand-100: #e9dcf2;
+  --color-brand-200: #dac6e9;
+  --color-brand-300: #c4a8db;
+  --color-brand-400: #a87ad3;
+  --color-brand-500: #966ac2;
+  --color-brand-600: #704798;
+  --color-brand-700: #573a76;
+  --color-magenta: #a87ad3;
 
   /* Neutros (tema claro) */
   --color-bg: #f5f3fb;
@@ -74,8 +74,8 @@
 
 /* ===== Base ===== */
 :root {
-  /* Gradiente fiel à referência: violeta uniforme (sem magenta) */
-  --gradient-primary: linear-gradient(140deg, #8e74ef 0%, #7b5ce8 45%, #6a44dc 100%);
+  /* Gradiente oficial da marca */
+  --gradient-primary: linear-gradient(135deg, #a87ad3 0%, #966ac2 50%, #704798 100%);
 }
 
 * {
