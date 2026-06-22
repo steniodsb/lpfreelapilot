@@ -16,6 +16,11 @@ import {
   MessageSquareQuote,
   CreditCard,
   Users,
+  FileText,
+  FileSignature,
+  Search,
+  Bot,
+  LayoutDashboard,
 } from "lucide-react";
 
 export const siteConfig = {
@@ -53,13 +58,19 @@ export const heroAvatars = [
   { src: "https://i.pravatar.cc/96?img=47", name: "Elisa", initials: "EL" },
 ];
 
-export const trustLogos = [
-  "Figma",
-  "Behance",
-  "Dribbble",
-  "Notion",
-  "Adobe",
-  "Canva",
+// faixa contínua: ícone + título de funcionalidade
+export const marqueeFeatures = [
+  { icon: Wallet, label: "Financeiro completo" },
+  { icon: KanbanSquare, label: "Kanban intuitivo" },
+  { icon: Users, label: "CRM integrado" },
+  { icon: FileText, label: "Briefing automático" },
+  { icon: StickyNote, label: "Notas inteligentes" },
+  { icon: Network, label: "Mapa mental" },
+  { icon: CreditCard, label: "Pagamentos por PIX" },
+  { icon: FileSignature, label: "Contratos em DOCX" },
+  { icon: Search, label: "Prospecção de leads" },
+  { icon: LayoutDashboard, label: "Dashboard do negócio" },
+  { icon: Bot, label: "Agentes de IA" },
 ];
 
 /* ---- Seção: A Dor ---- */

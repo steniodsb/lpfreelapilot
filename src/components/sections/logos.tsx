@@ -1,28 +1,22 @@
 "use client";
 
-import { BlurFade } from "@/components/magic/blur-fade";
 import { Marquee } from "@/components/magic/marquee";
-import { trustLogos } from "@/lib/site";
+import { marqueeFeatures } from "@/lib/site";
 
 export function Logos() {
   return (
-    <section className="border-y border-stroke bg-white/50 py-10">
-      <div className="mx-auto max-w-5xl px-6">
-        <BlurFade>
-          <p className="text-center text-sm text-muted">
-            Usado por freelancers que trabalham com as melhores ferramentas
-          </p>
-        </BlurFade>
-      </div>
-      <div className="relative mt-7 [mask-image:linear-gradient(to_right,transparent,#000_12%,#000_88%,transparent)]">
-        <Marquee pauseOnHover className="[--gap:4rem]">
-          {trustLogos.map((name) => (
-            <span
-              key={name}
-              className="font-display text-2xl font-normal text-muted/50 transition-colors hover:text-brand-500"
-            >
-              {name}
-            </span>
+    <section className="border-y border-stroke bg-white/60 py-6">
+      <div className="relative [mask-image:linear-gradient(to_right,transparent,#000_8%,#000_92%,transparent)]">
+        <Marquee pauseOnHover className="[--gap:3.5rem]">
+          {marqueeFeatures.map((f) => (
+            <div key={f.label} className="flex items-center gap-3">
+              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-stroke bg-brand-50 text-brand-600 shadow-sm">
+                <f.icon size={20} />
+              </span>
+              <span className="whitespace-nowrap font-display text-base font-medium text-ink">
+                {f.label}
+              </span>
+            </div>
           ))}
         </Marquee>
       </div>
