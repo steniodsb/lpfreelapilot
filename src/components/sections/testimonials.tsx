@@ -23,7 +23,7 @@ export function Testimonials() {
           per="word"
           preset="blur"
           highlight={["freelancers"]}
-          className="mt-4 font-display text-3xl font-normal tracking-tight text-ink sm:text-4xl"
+          className="mt-4 font-display text-4xl font-normal tracking-tight text-ink sm:text-5xl"
         >
           O que dizem os freelancers
         </RevealText>

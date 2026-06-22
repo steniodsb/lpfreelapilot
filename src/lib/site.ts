@@ -107,7 +107,7 @@ export const pain = {
 export const solution = {
   eyebrow: "A solução",
   title: "Conheça o FreelaPilot",
-  body: "O FreelaPilot reúne financeiro, projetos, Kanban, notas, mapa mental, CRM de prospecção e até pagamentos por PIX e cartão — num painel só, simples e bonito. Do primeiro contato ao recebimento, você no controle. E ainda instala como web app, com agentes de IA para acelerar o dia a dia.",
+  body: "O FreelaPilot reúne financeiro, projetos, Kanban, notas, mapa mental, CRM de prospecção e até pagamentos por PIX e cartão, num painel só, simples e bonito. Do primeiro contato ao recebimento, você no controle. E ainda instala como web app, com agentes de IA para acelerar o dia a dia.",
   pillars: [
     {
       icon: Layers,
@@ -173,7 +173,7 @@ export const features = [
 
 export const featuresHighlight = {
   title: "E ainda: Dashboard, CRM, Pagamentos e Agentes de IA",
-  desc: "Prospecção completa (pipeline, envios e extrator de leads), recebimento por PIX e cartão, contratos e assistentes de IA — tudo incluso. E o FreelaPilot instala como web app no seu celular.",
+  desc: "Prospecção completa (pipeline, envios e extrator de leads), recebimento por PIX e cartão, contratos e assistentes de IA, tudo incluso. E o FreelaPilot instala como web app no seu celular.",
   cta: "Ver todos os recursos",
 };
 
@@ -209,7 +209,7 @@ export const deepDives = [
     eyebrow: "Pagamentos",
     title: "Receba de qualquer cliente, na hora",
     highlight: ["hora"],
-    desc: "Seus clientes pagam por PIX ou cartão direto numa página de pagamento sua. Sem boleto perdido, sem cobrança chata — o dinheiro cai e você acompanha tudo.",
+    desc: "Seus clientes pagam por PIX ou cartão direto numa página de pagamento sua. Sem boleto perdido, sem cobrança chata. O dinheiro cai e você acompanha tudo.",
     checklist: [
       "Página de pagamento própria",
       "PIX e cartão de crédito",
@@ -257,7 +257,7 @@ export const deepDives = [
     eyebrow: "Notas",
     title: "Suas ideias e arquivos, sempre à mão",
     highlight: ["mão"],
-    desc: "Capture rascunhos, links e anexos num só lugar — com cores, busca e organização de verdade.",
+    desc: "Capture rascunhos, links e anexos num só lugar, com cores, busca e organização de verdade.",
     checklist: [
       "Notas com cores e tags",
       "Anexos e imagens",

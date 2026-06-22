@@ -17,7 +17,7 @@ export function Cta() {
               per="word"
               preset="blur"
               highlight={["decolar"]}
-              className="font-display text-3xl font-normal tracking-tight text-ink sm:text-4xl"
+              className="font-display text-4xl font-normal tracking-tight text-ink sm:text-5xl"
             >
               Pronto para decolar?
             </RevealText>

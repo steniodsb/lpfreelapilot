@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 /* ===========================================================================
-   FreelaPilot — Design Tokens (Tailwind v4 @theme)
-   Extraído de LP ANTIGA.pdf — tema claro, marca violeta.
+   FreelaPilot - Design Tokens (Tailwind v4 @theme)
+   Extraído de LP ANTIGA.pdf - tema claro, marca violeta.
    =========================================================================== */
 @theme {
   /* Brand */
@@ -40,7 +40,7 @@
   --shadow-float: 0 24px 70px rgba(80, 60, 160, 0.18);
   --shadow-cta: 0 14px 38px rgba(124, 92, 255, 0.45);
 
-  /* Fontes (vinculadas via next/font no layout) — DM Sans */
+  /* Fontes (vinculadas via next/font no layout) - DM Sans */
   --font-display: var(--font-dm-sans), system-ui, sans-serif;
   --font-sans: var(--font-dm-sans), system-ui, sans-serif;
 
@@ -126,7 +126,7 @@ body {
   color: transparent;
 }
 
-/* BorderGlow — borda que brilha seguindo o mouse (paleta violeta) */
+/* BorderGlow - borda que brilha seguindo o mouse (paleta violeta) */
 .glow-frame::before {
   content: "";
   position: absolute;
@@ -151,7 +151,7 @@ body {
   opacity: 1;
 }
 
-/* GlassIcon — ícone glassmorphism (paleta violeta) */
+/* GlassIcon - ícone glassmorphism (paleta violeta) */
 .glass-icon {
   position: relative;
   display: inline-grid;
@@ -183,7 +183,7 @@ body {
   transform: rotateY(26deg);
 }
 
-/* Glassmorphism — superfícies de vidro fosco */
+/* Glassmorphism - superfícies de vidro fosco */
 .glass-card {
   background-color: rgba(255, 255, 255, 0.55);
   backdrop-filter: blur(16px) saturate(140%);

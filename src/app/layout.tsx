@@ -9,11 +9,11 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} — ${siteConfig.tagline}`,
+  title: `${siteConfig.name} · ${siteConfig.tagline}`,
   description: siteConfig.description,
   metadataBase: new URL(siteConfig.url),
   openGraph: {
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
+    title: `${siteConfig.name} · ${siteConfig.tagline}`,
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,

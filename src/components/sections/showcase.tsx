@@ -23,7 +23,7 @@ export function Showcase() {
             per="word"
             preset="blur"
             highlight={["FreelaPilot"]}
-            className="mt-4 font-display text-3xl font-normal leading-tight tracking-tight text-ink sm:text-4xl"
+            className="mt-4 font-display text-4xl font-normal leading-tight tracking-tight text-ink sm:text-5xl"
           >
             {showcase.title}
           </RevealText>

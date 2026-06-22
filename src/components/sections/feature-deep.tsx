@@ -26,7 +26,7 @@ export function FeatureDeep() {
                 per="word"
                 preset="blur"
                 highlight={d.highlight}
-                className="mt-5 font-display text-3xl font-normal leading-tight tracking-tight text-ink sm:text-4xl"
+                className="mt-5 font-display text-4xl font-normal leading-tight tracking-tight text-ink sm:text-5xl"
               >
                 {d.title}
               </RevealText>

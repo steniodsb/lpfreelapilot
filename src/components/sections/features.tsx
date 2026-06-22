@@ -22,7 +22,7 @@ export function Features() {
             per="word"
             preset="blur"
             highlight={["verdade"]}
-            className="mt-4 font-display text-3xl font-normal tracking-tight text-ink sm:text-4xl"
+            className="mt-4 font-display text-4xl font-normal tracking-tight text-ink sm:text-5xl"
           >
             Tudo num só lugar, de verdade
           </RevealText>
