@@ -25,6 +25,7 @@ export function FeatureDeep() {
                 as="h2"
                 per="word"
                 preset="blur"
+                highlight={d.highlight}
                 className="mt-5 font-display text-3xl font-normal leading-tight tracking-tight text-ink sm:text-4xl"
               >
                 {d.title}

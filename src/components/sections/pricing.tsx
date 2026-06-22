@@ -26,6 +26,7 @@ export function Pricing() {
             as="h2"
             per="word"
             preset="blur"
+            highlight={["negócio"]}
             className="mt-4 font-display text-3xl font-normal tracking-tight text-ink sm:text-4xl"
           >
             Encontre o plano para o seu negócio

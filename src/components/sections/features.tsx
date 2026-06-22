@@ -21,6 +21,7 @@ export function Features() {
             as="h2"
             per="word"
             preset="blur"
+            highlight={["verdade"]}
             className="mt-4 font-display text-3xl font-normal tracking-tight text-ink sm:text-4xl"
           >
             Tudo num só lugar, de verdade

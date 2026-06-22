@@ -22,6 +22,7 @@ export function Testimonials() {
           as="h2"
           per="word"
           preset="blur"
+          highlight={["freelancers"]}
           className="mt-4 font-display text-3xl font-normal tracking-tight text-ink sm:text-4xl"
         >
           O que dizem os freelancers

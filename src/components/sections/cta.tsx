@@ -16,6 +16,7 @@ export function Cta() {
               as="h2"
               per="word"
               preset="blur"
+              highlight={["decolar"]}
               className="font-display text-3xl font-normal tracking-tight text-ink sm:text-4xl"
             >
               Pronto para decolar?

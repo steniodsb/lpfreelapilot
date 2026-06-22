@@ -25,7 +25,12 @@ type TextEffectProps = {
   trigger?: boolean;
   onAnimationComplete?: () => void;
   segmentWrapperClassName?: string;
+  /** Palavras que recebem o degradê violeta (.grad-text), por destaque. */
+  highlight?: string[];
 };
+
+const normalize = (s: string) =>
+  s.trim().replace(/[.,!?:;]/g, "").toLowerCase();
 
 const defaultStaggerTimes: Record<"char" | "word" | "line", number> = {
   char: 0.03,
@@ -105,7 +110,8 @@ const AnimationComponent: React.FC<{
   variants: Variants;
   per: "line" | "word" | "char";
   segmentWrapperClassName?: string;
-}> = React.memo(({ segment, variants, per, segmentWrapperClassName }) => {
+  itemClassName?: string;
+}> = React.memo(({ segment, variants, per, segmentWrapperClassName, itemClassName }) => {
   const content =
     per === "line" ? (
       <motion.span variants={variants} className="block">
@@ -115,7 +121,7 @@ const AnimationComponent: React.FC<{
       <motion.span
         aria-hidden="true"
         variants={variants}
-        className="inline-block whitespace-pre"
+        className={cn("inline-block whitespace-pre", itemClassName)}
       >
         {segment}
       </motion.span>
@@ -160,7 +166,9 @@ export function TextEffect({
   trigger = true,
   onAnimationComplete,
   segmentWrapperClassName,
+  highlight,
 }: TextEffectProps) {
+  const highlightSet = new Set((highlight ?? []).map(normalize));
   let segments: string[];
 
   if (per === "line") {
@@ -215,6 +223,11 @@ export function TextEffect({
               variants={itemVariants}
               per={per}
               segmentWrapperClassName={segmentWrapperClassName}
+              itemClassName={
+                per === "word" && highlightSet.has(normalize(segment))
+                  ? "grad-text"
+                  : undefined
+              }
             />
           ))}
         </MotionTag>

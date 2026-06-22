@@ -181,6 +181,7 @@ export const deepDives = [
     icon: Wallet,
     eyebrow: "Financeiro",
     title: "Saiba exatamente quanto você ganha",
+    highlight: ["ganha"],
     desc: "Controle receitas, despesas e a margem real de cada projeto. Chega de descobrir no fim do mês que trabalhou quase de graça.",
     checklist: [
       "Receitas e despesas por projeto",
@@ -196,6 +197,7 @@ export const deepDives = [
     icon: CreditCard,
     eyebrow: "Pagamentos",
     title: "Receba de qualquer cliente, na hora",
+    highlight: ["hora"],
     desc: "Seus clientes pagam por PIX ou cartão direto numa página de pagamento sua. Sem boleto perdido, sem cobrança chata — o dinheiro cai e você acompanha tudo.",
     checklist: [
       "Página de pagamento própria",
@@ -211,6 +213,7 @@ export const deepDives = [
     icon: KanbanSquare,
     eyebrow: "Kanban",
     title: "Cada projeto sob controle, do briefing à entrega",
+    highlight: ["controle"],
     desc: "Organize suas demandas em quadros visuais. Veja o que está em andamento e nunca mais perca um prazo.",
     checklist: [
       "Quadros e colunas personalizáveis",
@@ -226,6 +229,7 @@ export const deepDives = [
     icon: Users,
     eyebrow: "CRM & Prospecção",
     title: "Encha sua agenda de clientes",
+    highlight: ["clientes"],
     desc: "Capture, organize e converta leads com um CRM feito para freelancer: pipeline, planilhas, envios e extrator de leads, tudo num lugar.",
     checklist: [
       "Pipeline de oportunidades (em breve)",
@@ -241,6 +245,7 @@ export const deepDives = [
     icon: StickyNote,
     eyebrow: "Notas",
     title: "Suas ideias e arquivos, sempre à mão",
+    highlight: ["mão"],
     desc: "Capture rascunhos, links e anexos num só lugar — com cores, busca e organização de verdade.",
     checklist: [
       "Notas com cores e tags",
@@ -256,6 +261,7 @@ export const deepDives = [
     icon: Network,
     eyebrow: "Mapa mental",
     title: "Tire as ideias da cabeça e estruture projetos",
+    highlight: ["projetos"],
     desc: "Planeje campanhas e projetos com mapas mentais colaborativos, salvos automaticamente.",
     checklist: [
       "Mapas colaborativos em tempo real",

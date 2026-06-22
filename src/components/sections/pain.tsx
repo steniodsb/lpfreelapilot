@@ -18,6 +18,7 @@ export function Pain() {
             as="h2"
             per="word"
             preset="blur"
+            highlight={["ferramentas", "demais"]}
             className="mt-4 font-display text-3xl font-normal leading-tight tracking-tight text-ink sm:text-4xl"
           >
             {pain.title}
