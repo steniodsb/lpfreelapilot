@@ -1,0 +1,52 @@
+<svg viewBox="0 0 480 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anel de progresso com avanço rápido representando ganho de tempo">
+  <defs>
+    <linearGradient id="tp-bg" x1="0" y1="0" x2="480" y2="240" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFEAFD"/>
+      <stop offset="1" stop-color="#FBFAFE"/>
+    </linearGradient>
+    <linearGradient id="tp-brand" x1="150" y1="50" x2="330" y2="190" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A445D8"/>
+      <stop offset="0.5" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#6018C8"/>
+    </linearGradient>
+    <pattern id="tp-dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1.6" cy="1.6" r="1.6" fill="#7C3AED" fill-opacity="0.10"/>
+    </pattern>
+    <filter id="tp-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="480" height="240" rx="20" fill="url(#tp-bg)"/>
+  <rect width="480" height="240" rx="20" fill="url(#tp-dots)"/>
+  <circle cx="240" cy="120" r="118" fill="#A445D8" fill-opacity="0.06"/>
+
+  <!-- speed streaks -->
+  <g stroke="url(#tp-brand)" stroke-linecap="round" stroke-opacity="0.5">
+    <path d="M58 92 H150" stroke-width="4"/>
+    <path d="M44 120 H132" stroke-width="5"/>
+    <path d="M64 148 H150" stroke-width="4"/>
+    <path d="M396 92 H326" stroke-width="3" stroke-opacity="0.3"/>
+    <path d="M412 120 H334" stroke-width="3" stroke-opacity="0.3"/>
+  </g>
+
+  <!-- progress ring -->
+  <g transform="translate(240 120)">
+    <circle r="62" fill="none" stroke="#E4DCFB" stroke-width="10"/>
+    <circle r="62" fill="none" stroke="url(#tp-brand)" stroke-width="10" stroke-linecap="round"
+            stroke-dasharray="390" stroke-dashoffset="120" transform="rotate(-90)" filter="url(#tp-glow)"/>
+    <circle cx="62" cy="0" r="7.5" fill="#fff" stroke="url(#tp-brand)" stroke-width="3" transform="rotate(160)"/>
+    <!-- fast-forward glyph -->
+    <g fill="url(#tp-brand)">
+      <path d="M-22 -16 L-2 0 L-22 16 Z"/>
+      <path d="M2 -16 L22 0 L2 16 Z"/>
+    </g>
+  </g>
+
+  <!-- floating spark -->
+  <g fill="#A445D8">
+    <circle cx="356" cy="170" r="3" fill-opacity="0.7"/>
+    <circle cx="372" cy="60" r="2.4" fill-opacity="0.5"/>
+  </g>
+</svg>

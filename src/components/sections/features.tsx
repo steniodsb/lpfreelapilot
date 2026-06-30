@@ -3,7 +3,7 @@
 import { ArrowRight } from "lucide-react";
 import { BlurFade } from "@/components/magic/blur-fade";
 import { RevealText } from "@/components/magic/reveal-text";
-import { AppImage } from "@/components/magic/app-image";
+import { FeatureVisual } from "@/components/magic/feature-visuals";
 import { GlassIcon } from "@/components/magic/glass-icon";
 import { features, featuresHighlight } from "@/lib/site";
 
@@ -37,11 +37,9 @@ export function Features() {
           {features.map((f, i) => (
             <BlurFade key={f.key} delay={0.06 * i} className={f.span}>
               <div className="group h-full overflow-hidden rounded-3xl glass-card p-4 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-brand-200">
-                <AppImage
-                  src={f.img}
-                  alt={f.title}
-                  className="aspect-[16/9] rounded-2xl border border-stroke"
-                />
+                <div className="aspect-[16/9] w-full">
+                  <FeatureVisual k={f.key} />
+                </div>
                 <div className="px-2 pb-1 pt-5">
                   <div className="flex items-center gap-3">
                     <GlassIcon icon={f.icon} size={40} iconSize={18} />

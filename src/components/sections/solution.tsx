@@ -33,14 +33,27 @@ export function Solution() {
         <div className="mt-14 grid gap-5 sm:grid-cols-3">
           {solution.pillars.map((p, i) => (
             <BlurFade key={p.title} delay={0.1 * i}>
-              <BorderGlow className="h-full rounded-2xl glass-card p-7 text-left shadow-card transition-transform duration-300 hover:-translate-y-1">
-                <GlassIcon icon={p.icon} />
-                <h3 className="mt-5 font-display text-lg font-normal text-ink">
-                  {p.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
-                  {p.desc}
-                </p>
+              <BorderGlow className="group h-full overflow-hidden rounded-2xl glass-card text-left shadow-card transition-transform duration-300 hover:-translate-y-1">
+                <div className="relative aspect-[2/1] w-full overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={p.art}
+                    alt=""
+                    aria-hidden
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-7 pt-0">
+                  <div className="-mt-7">
+                    <GlassIcon icon={p.icon} />
+                  </div>
+                  <h3 className="mt-4 font-display text-lg font-normal text-ink">
+                    {p.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted">
+                    {p.desc}
+                  </p>
+                </div>
               </BorderGlow>
             </BlurFade>
           ))}

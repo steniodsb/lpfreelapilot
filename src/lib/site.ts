@@ -23,6 +23,9 @@ import {
   Home,
   Sparkles,
   MonitorPlay,
+  FolderKanban,
+  TrendingUp,
+  Star,
 } from "lucide-react";
 
 export const siteConfig = {
@@ -117,16 +120,19 @@ export const solution = {
       icon: Layers,
       title: "Centralize tudo",
       desc: "Um só login para o seu negócio inteiro.",
+      art: "/cards/pillar-centralize.svg",
     },
     {
       icon: Clock,
       title: "Ganhe tempo",
       desc: "Menos abas abertas, mais entregas no prazo.",
+      art: "/cards/pillar-tempo.svg",
     },
     {
       icon: BadgeCheck,
       title: "Seja profissional",
       desc: "Contratos, propostas e relatórios com a sua cara.",
+      art: "/cards/pillar-profissional.svg",
     },
   ],
 };
@@ -183,10 +189,10 @@ export const featuresHighlight = {
 
 /* ---- Seção: Números ---- */
 export const stats = [
-  { value: 2000, prefix: "", suffix: "+", label: "Freelancers ativos" },
-  { value: 5000, prefix: "", suffix: "+", label: "Projetos gerenciados" },
-  { value: 30, prefix: "R$", suffix: "M+", label: "Receita organizada" },
-  { value: 98, prefix: "", suffix: "%", label: "Recomendam" },
+  { value: 2000, prefix: "", suffix: "+", label: "Freelancers ativos", icon: Users },
+  { value: 5000, prefix: "", suffix: "+", label: "Projetos gerenciados", icon: FolderKanban },
+  { value: 30, prefix: "R$", suffix: "M+", label: "Receita organizada", icon: TrendingUp },
+  { value: 98, prefix: "", suffix: "%", label: "Recomendam", icon: Star },
 ];
 
 /* ---- Seções deep-dive (1 por funcionalidade) ---- */
