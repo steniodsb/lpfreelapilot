@@ -4,6 +4,7 @@ import { BlurFade } from "@/components/magic/blur-fade";
 import { RevealText } from "@/components/magic/reveal-text";
 import { BorderGlow } from "@/components/magic/border-glow";
 import { GlassIcon } from "@/components/magic/glass-icon";
+import { PillarVisual } from "@/components/magic/pillar-visuals";
 import { solution } from "@/lib/site";
 
 export function Solution() {
@@ -34,14 +35,8 @@ export function Solution() {
           {solution.pillars.map((p, i) => (
             <BlurFade key={p.title} delay={0.1 * i}>
               <BorderGlow className="group h-full overflow-hidden rounded-2xl glass-card text-left shadow-card transition-transform duration-300 hover:-translate-y-1">
-                <div className="relative aspect-[2/1] w-full overflow-hidden">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={p.art}
-                    alt=""
-                    aria-hidden
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
+                <div className="relative aspect-[2/1] w-full overflow-hidden transition-transform duration-500 group-hover:scale-[1.03]">
+                  <PillarVisual k={p.key} />
                 </div>
                 <div className="p-7 pt-0">
                   <div className="-mt-7">

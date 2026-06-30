@@ -5,7 +5,7 @@ import { marqueeFeatures } from "@/lib/site";
 
 export function Logos() {
   return (
-    <section className="glass-strip relative py-8">
+    <section className="glass-strip relative mt-16 py-8 sm:mt-24">
       <div className="relative [mask-image:linear-gradient(to_right,transparent,#000_6%,#000_94%,transparent)]">
         <Marquee pauseOnHover className="[--gap:3.5rem]">
           {marqueeFeatures.map((f) => (

@@ -117,22 +117,22 @@ export const solution = {
   body: "O FreelaPilot reúne financeiro, projetos, Kanban, notas, mapa mental, CRM de prospecção e até pagamentos por PIX e cartão, num painel só, simples e bonito. Do primeiro contato ao recebimento, você no controle. E ainda instala como web app, com agentes de IA para acelerar o dia a dia.",
   pillars: [
     {
+      key: "centralize",
       icon: Layers,
       title: "Centralize tudo",
       desc: "Um só login para o seu negócio inteiro.",
-      art: "/cards/pillar-centralize.svg",
     },
     {
+      key: "tempo",
       icon: Clock,
       title: "Ganhe tempo",
       desc: "Menos abas abertas, mais entregas no prazo.",
-      art: "/cards/pillar-tempo.svg",
     },
     {
+      key: "profissional",
       icon: BadgeCheck,
       title: "Seja profissional",
       desc: "Contratos, propostas e relatórios com a sua cara.",
-      art: "/cards/pillar-profissional.svg",
     },
   ],
 };
@@ -145,7 +145,7 @@ export const features = [
     title: "Financeiro",
     desc: "Receitas, despesas e a margem real de cada projeto.",
     img: "/app/financeiro.png",
-    span: "lg:col-span-2",
+    span: "",
   },
   {
     key: "kanban",
@@ -179,11 +179,19 @@ export const features = [
     img: "/app/pagamentos.png",
     span: "",
   },
+  {
+    key: "crm",
+    icon: Users,
+    title: "CRM",
+    desc: "Capture e converta leads num pipeline visual de prospecção.",
+    img: "/app/crm.png",
+    span: "",
+  },
 ];
 
 export const featuresHighlight = {
-  title: "E ainda: Dashboard, CRM, Pagamentos e Agentes de IA",
-  desc: "Prospecção completa (pipeline, envios e extrator de leads), recebimento por PIX e cartão, contratos e assistentes de IA, tudo incluso. E o FreelaPilot instala como web app no seu celular.",
+  title: "E ainda: Dashboard, Briefings, Contratos e Agentes de IA",
+  desc: "Visão geral do negócio, briefings compartilháveis, contratos em DOCX e assistentes de IA, tudo incluso. E o FreelaPilot instala como web app no seu celular.",
   cta: "Ver todos os recursos",
 };
 

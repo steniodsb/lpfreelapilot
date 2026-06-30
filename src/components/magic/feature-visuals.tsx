@@ -364,6 +364,54 @@ function PagamentosViz() {
   );
 }
 
+/* ---------- CRM: pipeline de leads com status ---------- */
+function CrmViz() {
+  const leads = [
+    { ini: "AM", status: "Novo", cls: "bg-brand-100 text-brand-600" },
+    { ini: "RC", status: "Em contato", cls: "bg-amber-100 text-amber-600" },
+    { ini: "JL", status: "Fechado", cls: "bg-success/15 text-success" },
+  ];
+  return (
+    <Frame>
+      <div className="absolute inset-3 flex flex-col gap-1.5">
+        <div className="flex items-center justify-between px-0.5">
+          <span className="text-[10px] font-semibold text-ink/70">Pipeline</span>
+          <motion.span
+            animate={{ opacity: [0.6, 1, 0.6] }}
+            transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
+            className="rounded-full bg-brand-100 px-1.5 py-0.5 text-[9px] font-semibold text-brand-600"
+          >
+            +24 leads
+          </motion.span>
+        </div>
+        {leads.map((l, i) => (
+          <motion.div
+            key={l.ini}
+            initial={{ opacity: 0, x: -10 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.15 * i, ease: EASE }}
+            className="flex items-center gap-2 rounded-lg border border-stroke bg-white px-2 py-1.5"
+          >
+            <span className="grid size-6 shrink-0 place-items-center rounded-full bg-gradient-primary text-[8px] font-bold text-white">
+              {l.ini}
+            </span>
+            <span className="flex-1">
+              <span className="block h-1 w-1/2 rounded-full bg-ink/15" />
+              <span className="mt-1 block h-1 w-2/3 rounded-full bg-stroke" />
+            </span>
+            <span
+              className={`rounded-full px-1.5 py-0.5 text-[8px] font-semibold ${l.cls}`}
+            >
+              {l.status}
+            </span>
+          </motion.div>
+        ))}
+      </div>
+    </Frame>
+  );
+}
+
 export function FeatureVisual({ k }: { k: string }) {
   switch (k) {
     case "financeiro":
@@ -376,6 +424,8 @@ export function FeatureVisual({ k }: { k: string }) {
       return <MapaViz />;
     case "pagamentos":
       return <PagamentosViz />;
+    case "crm":
+      return <CrmViz />;
     default:
       return null;
   }
